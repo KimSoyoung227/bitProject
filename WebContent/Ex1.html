@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container{
+    position: relative;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding-left: 60%;
+    font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div id="upMenu" style="background-color: #4CAF50;height: 50px" >
+                <input type="button" value="아래로 이동"><a href="#contentArea"></a>
+                <input type="button" value="표로 이동"><a href="#customers"></a>
+        </div>
+    </nav>
+<header>
+    <div class = "container">
+    <img src ="C:\Users\504CLASS 09\Desktop\img11.jpeg" width="100%" alt="header">
+     <div class = "center" style="color: aliceblue">Come On Baby</div>
+     </div>
+</header>
+<table id="customers">
+  <tr>
+    <th style="text-align: center">이름</th>
+    <th style="text-align: center">나이</th>
+    <th style="text-align: center">주소</th>
+    <th style="text-align: center"> HP </th>
+  </tr>
+  <tr>
+    <td>소영</td>
+    <td>23</td>
+    <td>천안시 서북구 불당동</td>
+    <td><i class="fa fa-battery-0" style="font-size:36px;"></i></td>
+  </tr>
+  <tr>
+    <td>뮨필</td>
+    <td>아침햇살</td>
+    <td>서울특별시</td>
+    <td><i class="fa fa-battery-2" style="font-size:36px"></i></td>
+  </tr>
+  <tr>
+    <td>장우</td>
+    <td>게맛살</td>
+    <td>서울특별시 강남구</td>
+    <td><i class="fa fa-battery-2" style="font-size:36px"></i></td>
+  </tr>
+  <tr>
+    <td>영원</td>
+    <td>순살</td>
+    <td>평양시</td>
+    <td><i class="fa fa-battery-4" style="font-size:36px"></i></td>
+  </tr>
+  <tr>
+    <td>선영</td>
+    <td>갓백살</td>
+    <td>우이도</td>
+    <td><i class="fa fa-battery-2" style="font-size:36px"></i></td>
+  </tr>
+  <tr>
+    <td>윤주</td>
+    <td>박살</td>
+    <td>서울대입구</td>
+    <td><i class="fa fa-battery-4" style="font-size:36px"></i></td>
+  </tr>
+  <tr>
+    <td>수정</td>
+    <td>주름살</td>
+    <td>인천시</td>
+    <td><i class="fa fa-battery-2" style="font-size:36px; color:#4CAF50"></i></td>
+  </tr>
+  <tr>
+    <td>궁성</td>
+    <td>멱살</td>
+    <td>성남시 분당</td>
+    <td><i class="fa fa-battery-0" style="font-size:36px;"></i></td>
+  </tr>
+ 
+</table>
+<textarea name="contentArea" id="contentArea" cols="30" rows="10" ></textarea>
+</body>
+</html>
