@@ -101,7 +101,7 @@ if(msg != null){
         </div>
     </div>
 
-	<!-- 푸터(수정)  -->
+	<!-- 푸터  -->
     <footer>
         <div class="footer">
             <div id="footer_align">
