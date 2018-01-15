@@ -11,13 +11,12 @@
 String id=request.getParameter("id_txt");
 String pwd = request.getParameter("pwd_txt");
 if(id.equals("sue227") && pwd.equals("12345")){
-	response.sendRedirect("index.html");
+	response.sendRedirect("index.jsp");
 }else{
 	request.setAttribute("msg", "id 또는 password가 틀립니다.");
 	
 	RequestDispatcher reqDis=request.getRequestDispatcher("/login.jsp");
 	reqDis.forward(request, response);
-
 }
 
 %>

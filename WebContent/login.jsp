@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
-
 <head>
      <meta charset="UTF-8">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +25,7 @@ if(msg != null){
                     <ul>
                         <!-- 로고  -->
                         <li id="logo" class="main_first_menu">
-                            <a href="index.html">
+                            <a href="index.jsp">
                                 <img src="F:\BitCamp\img\logo7.png">
                             </a>
                         </li>
