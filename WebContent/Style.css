@@ -5,12 +5,12 @@ body {
     /* display: block; */
     font-size: 16px;
 }
-/* 硫붾돱 */
+/* 메뉴 */
 .main_first_menu_div{
     margin: 0 auto;
     height: 100px;
 }
-/* 濡쒓퀬 */
+/* 로고 */
 #logo{
     list-style: none;
     width: 150px;
@@ -22,7 +22,7 @@ body {
     margin-right: 20px;
     vertical-align: bottom;
 }
-/* 泥ル쾲吏몃찓�돱 */
+/* 메인메뉴 */
 .main_first_menu_div{
     width: 1000px;
     text-align: center;
@@ -41,6 +41,7 @@ body {
 .main_first_small_menu{
     position: absolute;
     left:0px;
+   	padding-top:10px;
     height: 50px;
     display:none;
     background-color: #615e5e;
@@ -66,7 +67,7 @@ body {
 #search_btn:hover{
     color: #003939;
 }
-/* �몢踰덉㎏硫붾돱 */
+/* 아이콘 메뉴 */
 .main_second_menu{
     margin-right: 10px;
     display:inline-block;
@@ -81,7 +82,7 @@ body {
         visibility: hidden;
     }
 }
-/* 而⑦뀗痢� */
+/* 컨텐츠 */
 .main_img{
     display:block;
     position: relative;
@@ -137,7 +138,7 @@ body {
        height: 900px;
     }
 }
-/* �뫖�꽣 */
+/* 푸터 */
 footer{
     font-size: 9px;
     background-color:rgb(83, 81, 81);

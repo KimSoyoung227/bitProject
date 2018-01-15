@@ -19,14 +19,18 @@
 }
 #login_div>div{
     display:inline-block;
+    margin-top:15px;
 }
 #login_div{
     border-top:1px solid black;
     border-bottom:1px solid black;
     height: 200px;
-    margin-left:200px;
+    margin-left: 200px; 
     text-align: center;
     padding: 10px 0;
+}
+#check_autoLogin{
+	margin:20px;
 }
 .login_button{
     background-color: rgba(240, 248, 255, 0);
@@ -34,7 +38,7 @@
     border: 2px solid #555555;
     padding: 30px 30px;
     font-size: 25px;
-    vertical-align: 25px;
+    vertical-align: 50px;
 }
 .login_button:hover{
     background-color: #555555;
