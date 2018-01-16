@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- 헤더 -->
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="commons/header.jsp"></jsp:include>
     <!-- 컨텐츠1 -->
     <div class="main_img">
         <img src="F:\BitCamp\img\main_img1.JPG">
@@ -53,6 +53,6 @@
         </div>
     </div>   
     <!-- 푸터 -->
-    <jsp:include page="footer.jsp"></jsp:include>
+    <jsp:include page="commons/footer.jsp"></jsp:include>
 </body>
 </html>

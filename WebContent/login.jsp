@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,14 +10,14 @@
 </head>
 
 <body>
-	<%
+<%
 String msg = (String)request.getAttribute("msg");
 if(msg != null){
 %>
 	<label><b><%=msg%></b></label>
 	<%} %>
 	<!-- 헤더 -->
-	<jsp:include page="header.jsp"></jsp:include>
+	<jsp:include page="commons/header.jsp"></jsp:include>
 	<!-- 컨텐츠 -->
 	<div class="login_img">
 		<img src="F:\BitCamp\img\post.JPG">
@@ -27,7 +27,7 @@ if(msg != null){
 			<h1>로그인</h1>
 		</span>
 		<!-- id, pwd 입력창 -->
-		<form id="form" action="/loginAction.jsp" method="post">
+		<form id="form" action="<%= request.getContextPath() %>/loginAction" method="post"><!-- /MyHomepage -->
 			<div id="login_div">
 				<div>
 					<h2>MEMBER LOGIN</h2>
@@ -57,7 +57,7 @@ if(msg != null){
 	</div>
 
 	<!-- 푸터  -->
-	<jsp:include page="footer.jsp"></jsp:include>
+	<jsp:include page="commons/footer.jsp"></jsp:include>
 </body>
 
 </html>
