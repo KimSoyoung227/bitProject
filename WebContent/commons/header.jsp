@@ -8,23 +8,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soyoung</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <script src="jsFun.js"></script>
 </head>
 <body>
+<%
+String memberID = (String)session.getAttribute("ID");
+log(memberID);
+boolean login = memberID == null? false: true;
+System.out.println(login);
+%>
 <div>
         <div class="main_first_menu_div">
             <ul>
                 <!-- 로고 -->
                 <li id="logo" class="main_first_menu">
                     <a href="index.jsp">
-                        <img src="F:\BitCamp\img\logo7.png">
+                        <img src="img\logo7.png">
                     </a>
                 </li>
                 <!-- 메뉴 -->
                 <li class="main_first_menu">NEIGHBOR
                     <div class="main_first_small_menu">
                         <a href="#">이웃새글</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                        <a href="#">이웃보기</a>
+                        <a href="lookNeighborNameList.jsp">이웃보기</a>
                     </div>
                 </li>
                 <li class="main_first_menu">LOOK POST
@@ -46,21 +51,34 @@
                     </div>
                 </li>
                 <!-- 로그인 -->
-                <li class="main_first_menu">
-                    <a href="login.jsp">
-                        <img src="F:\BitCamp\img\login.png">
+                 <%if(login){
+                	 System.out.println("1"+login);
+                 %> 
+                 <li class="main_first_menu">
+                    <a href="<%= request.getContextPath()%>/logoutAction">
+                        LOGOUT
                     </a>
                 </li>
+                    <%}else{
+                    	System.out.println("2"+login);%>
+                     <li class="main_first_menu">
+                    <a href="login.jsp">
+                        LOGIN
+                    </a>
+                    </li>
+                <%
+                    }
+                %>
                 <!-- 검색 -->
                 <li class="main_first_menu">
                     <a href="#">
-                        <img src="F:\BitCamp\img\search.png">
-                         <div id="main_first_search">
+                        <img src="img\search.png">
+                     </a>
+                </li>
+                        <!--  <div id="main_first_search">
                         	<input type="text" value="insert content." name="search_txt">
                         	<input type="submit" value = "search" name="search_btn" id="search_btn">
-                    	</div>
-                    </a>
-                </li>
+                    	</div> -->
             </ul>
         </div>
     </div>

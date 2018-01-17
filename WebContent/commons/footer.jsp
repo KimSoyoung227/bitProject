@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soyoung</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <script src="jsFun.js"></script>
 </head>
 <body>
  <footer>
@@ -40,13 +39,13 @@
                         <br>
                         <div id="footer_menu_sns">
                             <a href="#">
-                                <img src="F:\BitCamp\img\facebook.png">
+                                <img src="img\facebook.png">
                             </a>
                             <a href="#">
-                                <img src="F:\BitCamp\img\twitter.png">
+                                <img src="img\twitter.png">
                             </a>
                             <a href="#">
-                                <img src="F:\BitCamp\img\pinterest.png">
+                                <img src="img\pinterest.png">
                             </a>
                         </div>
                     </ul>

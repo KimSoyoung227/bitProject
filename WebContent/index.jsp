@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.net.URLDecoder"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,14 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soyoung</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <script src="jsFun.js"></script>
 </head>
 <body>
+<%
+String msg = (String)request.getAttribute("msg");
+if(msg != null){
+%>
+	<label><b><%=msg%></b></label>
+	<%} %>
 <!-- 헤더 -->
 <jsp:include page="commons/header.jsp"></jsp:include>
     <!-- 컨텐츠1 -->
-    <div class="main_img">
-        <img src="F:\BitCamp\img\main_img1.JPG">
+    <div class="main_img">   
+        <img src="img\main_img1.jpg">
         <div class="main_img_exp">
             <div class="main_img_exp_tit">Lorem ipsum dolor sit</div>
             <br>
@@ -28,7 +33,7 @@
     <!-- 컨텐츠2 -->
     <div id="content">
         <h1> What is
-            <img src="F:\BitCamp\img\logo7.png">? </h1>
+            <img src="img\logo7.png">? </h1>
         <br>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -42,7 +47,7 @@
     </div>
     <!-- 컨텐츠3 -->
     <div class="main_img">
-        <img src="F:\BitCamp\img\main_img2.JPG">
+        <img src="img\main_img2.jpg">
         <div class="main_img_exp">
             <div class="main_img_exp_tit">Lorem ipsum dolor sit</div>
             <br>
