@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"  %>
-<%@ page import="util.Cookies" %>
+<%@ page import="com.codechobo.Cookies" %>
 <%@ page import="java.net.URLDecoder" %>
 <%
 request.setCharacterEncoding("utf-8");
@@ -10,8 +10,8 @@ request.setCharacterEncoding("utf-8");
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="Style.css">
-<link rel="stylesheet" type="text/css" href="Style2.css">
+<link rel="stylesheet" type="text/css" href="indexStyle.css">
+<link rel="stylesheet" type="text/css" href="loginStyle.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@ if(msg != null){
 			<h1>로그인</h1>
 		</span>
 		<!-- id, pwd 입력창 -->
-		<form id="form" action="<%= request.getContextPath()%>/loginAction" method="post"><!-- /MyHomepage -->
+		<form id="form" action="<%= request.getContextPath()%>/loginAction" method="post"><!-- /MyHomepage --><%-- <%= request.getContextPath()%> --%>
 			<div id="login_div">
 				<div>	
 					<h2>MEMBER LOGIN</h2>
@@ -50,7 +50,7 @@ if(msg != null){
 							
 					비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pwd_txt">
 					<br>
-					<input type="checkbox" id="check_autoLogin"  name="check_autoLogin" checked>아이디저장
+					<input type="checkbox" id="check_autoLogin"  name="check_autoLogin">아이디저장
 				</div>
 				<div>
 					
@@ -65,7 +65,7 @@ if(msg != null){
 		<!-- 부가메뉴 -->
 		<div class="login_more">
 			<a href="#">비밀번호를 잊어버리셨습니까?</a><br>
-			<a href="joinMember.jsp">회원가입을 하시겠습니까?</a>
+			<a href="/joinMemberAgreement.jsp">회원가입을 하시겠습니까?</a>
 		</div>
 	</div>
 
